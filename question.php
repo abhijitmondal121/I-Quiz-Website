@@ -24,6 +24,36 @@
      #a{
        font-size:20px;
   }
+  .w{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+    margin-left:5px;
+    
+  }
+  #countdown{
+    font-family: cursive;
+    display: inline-flex;
+    height: 60px;
+    width: 250px;
+    font-weight:bold;
+    font-size: 35px;
+    align-items: center;
+    margin: 0;
+   
+    /* linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0) */
+    background: white;
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
    @media screen and (min-device-width: 664px) and (max-device-width: 1194px){
 
      #b{
@@ -51,13 +81,38 @@
   #a{
        font-size:14px;
   }
+
+  #countdown{
+    
+    display: inline-flex;
+    height: 50px;
+    width: 150px;
+    font-weight:bold;
+    font-size: 20px;
+    align-items: center;
+    margin: 0;
+   
+    /* linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0) */
+    background: linear-gradient(135deg,#14ffe9,#ffeb3b,#ff00e0);
+   -webkit-background-clip: text;
+   -webkit-text-fill-color: transparent;
+   animation: animate 1.5s linear infinite;
+}
+
+@keyframes animate {
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
 }
   </style>
   <body>
+  
   <?php  include "partials/_header.php";?>
-  <div class=" jumbo-bg jumbotron jumbotron-fluid" id="home"style=" padding:10px 0px; background-image: url('partials/f4.jpg');background-size: 100%; !important" >
-
-  <div class="container mt-5 mb-0">
+  
+  <div class=" jumbo-bg jumbotron jumbotron-fluid mb-0" id="home"style=" padding:10px 0px; background-image: url('partials/f4.jpg');background-size: 100%; !important" >
+  <div class="w"><p id="countdown"></p>   </div>
+  <div class="container mt-0 mb-0">
   <center>
 <?php
   $slno = $_GET['slno'];
@@ -132,15 +187,40 @@
     <br><br>
     </form>
     </div>
-
+    </div>
 
    
-    <?php include "partials/_footer2.php";?>
+    <?php include "partials/_footer.php";?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+ <script>
+ const sm=2.5;
+let time=sm*60;
+const countdown=document.getElementById('countdown');
+
+setInterval(updatecount , 1000);
+
+function updatecount(){
+    const min=Math.floor(time/60);
+    const mins=min<10 ? '0' +min :min;
+    let seconds =time%60;
+    
+    seconds=seconds<10 ? '0' +seconds : seconds;
+    
+
+    countdown.innerHTML=`Time:${mins}:${seconds}`;
+    time--;
+    if(min== 00 && seconds==00){
+        time=time+1;
+        window.location.replace("http://localhost/all_quiz/index2.php");
+
+    }
+}
+ </script>
+ 
   </body>
 </html>

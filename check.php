@@ -22,6 +22,14 @@
      #a{
        font-size:28px;
   }
+  .containe{
+   
+    background-color:#ebebe0;
+  }
+  .y{
+    font-size:42px;
+    text-shadow: 3px 3px white;
+  }
    @media screen and (min-device-width: 664px) and (max-device-width: 1194px){
 
      #b{
@@ -49,13 +57,16 @@
   #a{
        font-size:17px;
   }
+  .y{
+    font-size:28px;
+    text-shadow: 3px 3px white;
+  }
 }
   </style>
   <body>
   <?php  include "partials/_header.php";?>
-  <div class=" jumbo-bg jumbotron jumbotron-fluid" id="home"style=" padding:150px 0px;background-image: url('partials/f8.jpg'); background-size: 100%; !important" >
-
-  <div class="container mt-5">
+  <div class=" jumbo-bg jumbotron jumbotron-fluid mb-0" id="home"style=" padding:80px 0px;background-image: url('partials/f8.jpg'); background-size: 100%; !important" >
+  <div class="container mt-2 mb-0">
   <center>
 <?php
  
@@ -69,7 +80,7 @@
   $result=mysqli_query($conn,$sql);
   while($rows=mysqli_fetch_array($result)){
   
-  echo '<button type="button" class="btn btn-outline-light " data-toggle="modal" data-target="#l"><h1 id="b">Result of '.$rows['t_name'].' quiz</h1></button>
+  echo '<button type="button" class="btn btn-outline-light mb-3 " data-toggle="modal" data-target="#l"><h1 id="b">Result of '.$rows['t_name'].' quiz</h1></button>
   ';
   }
 ?>
@@ -89,7 +100,7 @@
           $count= count($_REQUEST['quizcheck']);
           echo '
           
-          <div class="container my-5">
+          <div class="container my-1">
        <div class="card" >
        
        </div>
@@ -130,7 +141,55 @@
 
 
  ?>
-    <?php include "partials/_footer2.php";?>
+</div>
+</div>
+
+<div class="containe mt-0 py-4">
+<center>
+<h2 class="y my-4">All Correct Answers</h2>
+</center>
+
+<div class="container my-5 ">
+<?php
+        // $slno = $_GET['slno'];
+       
+           
+            $sql="SELECT *FROM question where `tid`= '$tid' ";
+            $result=mysqli_query($conn,$sql);
+            while($rows=mysqli_fetch_array($result)){
+             $aid=$rows['ansid'];   
+            echo ' 
+            
+            <div class="container mt-3">
+            <div class="card" style="border-radius:20px;">
+                <h4 class="card-header" id="qb" style="font-size:18px;">'.$rows['question'].'</h4>';
+            $sql1="SELECT *FROM answers where ansid=$aid ";
+            $query=mysqli_query($conn,$sql1);
+            while($rows=mysqli_fetch_array($query)){
+
+                echo'<div class="card-body "id="ab" >Ans : 
+                '.$rows['answers'].'';
+                ?>
+
+
+                <?php
+                echo'
+
+                </div>';
+                
+            }
+            
+        echo' </div>
+        </div>';
+    }  
+    ?>
+</div>
+<center><h3 class="y">Thank you for visiting</h3></center>
+                
+</div>
+
+
+    <?php include "partials/_footer.php";?>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

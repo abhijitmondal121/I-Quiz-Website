@@ -15,7 +15,7 @@ if(isset($_SESSION['loggedin'])&& $_SESSION['loggedin']=true){
         <div>
         <a href="index2.php" class="btn btn-outline-light mr-1"style="font-weight: bold;" >Dashbord</a>
         <button type="button" class="btn btn-light mr-1" data-toggle="modal" data-target="#l">welcome-'. $_SESSION['loginEmail'].'</button>
-        <a href="logout.php" class="btn btn-outline-light mr-1" >logout</a>
+        <a href="partials/logout.php" class="btn btn-outline-light mr-1" >logout</a>
      </div>
         </div>
         ';

@@ -133,7 +133,7 @@ img{
 ?>
 
 <center>
-<div class=" jumbo-bg jumbotron jumbotron-fluid" id="home"style=" padding:130px 0px;background-image: url('partials/f8.jpg'); background-size: 100%; !important" >
+<div class=" jumbo-bg jumbotron jumbotron-fluid mb-0" id="home"style=" padding:130px 0px;background-image: url('partials/f8.jpg'); background-size: 100%; !important" >
 
 </div>
 
@@ -147,7 +147,7 @@ img{
      </div>
       </div>
       <div class="containr py-5 mt-0" style="background-color:#e6ffcc;">
-      <div class="container">
+      <div class="container py-3">
       <br><br>
       <p class="profile">Developed by ~ Abhijit</p>
       
@@ -155,7 +155,7 @@ img{
       </div>
       </div>
 </center>
-
+<?php include "partials/_footer.php";?>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
