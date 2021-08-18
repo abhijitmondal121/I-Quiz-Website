@@ -15,7 +15,7 @@
   </head>
   <style>
   #home{
-    height:570px; padding:20px 0px; background-image: url('partials/f9.jpg');background-size: 100%; 
+    height:570px; padding:20px 0px; background-image: url('partials/q5.jpg');background-size: 100%; 
   }
 #con{
   background-color:#e6ffcc;
@@ -57,7 +57,7 @@
 
 @media screen and (min-device-width: 694px) and (max-device-width: 900px){
   #home{
-    height:390px; padding:20px 0px; background-image: url('partials/f9.jpg');background-repeat: no-repeat;background-size: 100%; 
+    height:390px; padding:20px 0px; background-image: url('partials/q5.jpg');background-repeat: no-repeat;background-size: 100%; 
   }
   #con{
   background-color:#e6ffcc;
@@ -101,15 +101,16 @@
 
 @media screen and (min-device-width: 294px) and (max-device-width: 693px){
   #home{
-    height:185px; padding:20px 0px; background-image: url('partials/f9.jpg');background-size: 100%; 
+    height:235px; padding:20px 0px; background-image: url('partials/q5.jpg');background-size: 100%; 
   }
   #con{
   background-color:#e6ffcc;
-  padding:187px 0px;
+  padding:50px 0px;
+  font-weight:bold;
 }
 .myclass {
-  font-size: 50px;
-  font-family: cursive;
+  font-size: 53px;
+  /* font-family: cursive; */
   width: auto;
   
   font-weight:bold;

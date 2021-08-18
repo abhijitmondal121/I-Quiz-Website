@@ -111,7 +111,7 @@
   <?php  include "partials/_header.php";?>
   
   <div class=" jumbo-bg jumbotron jumbotron-fluid mb-0" id="home"style=" padding:10px 0px; background-image: url('partials/f4.jpg');background-size: 100%; !important" >
-  <div class="w"><p id="countdown"></p>   </div>
+  <div class="w mt-3"><p id="countdown"></p>   </div>
   <div class="container mt-0 mb-0">
   <center>
 <?php
