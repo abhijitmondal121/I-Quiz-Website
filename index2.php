@@ -55,8 +55,7 @@ font-size:28px;
 }
 }
   </style>
-  <body>
-    
+  <body> 
     
   <?php
   
