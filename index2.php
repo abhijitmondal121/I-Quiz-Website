@@ -108,6 +108,7 @@ font-size:28px;
     </div>
     
   <?php include "partials/_footer.php";?>
+    
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
