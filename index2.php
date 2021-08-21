@@ -87,6 +87,7 @@ font-size:28px;
             // ';
                 
                 
+                
             echo '  <div class="col-md-4 mt-3 mb-2">
             <div class="card" style="width: 16rem;border-radius: 10%;box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);">
             <img  src="https://source.unsplash.com/500x400/?'. $t_name.',coding" class="card-img-top" alt="..." style=" border-radius: 15%;">
