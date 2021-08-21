@@ -58,8 +58,6 @@ font-size:28px;
   <body>
     
     
-
-
   <?php
   
     include "partials/_header.php";
