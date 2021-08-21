@@ -104,8 +104,6 @@ font-size:28px;
     </div>
      
     </center>
-
-
     </div>
     
   <?php include "partials/_footer.php";?>
