@@ -69,7 +69,6 @@ font-size:28px;
 <div class="c "style="">
     
     <!--section  -->
-  
       <center>
       <div class="container my-2 px-2" >
       <h2 class="y my-4">Please select your Language</h2>
