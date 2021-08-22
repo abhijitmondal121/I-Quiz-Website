@@ -62,8 +62,6 @@ font-size: 22px;
 font-family: cursive;
 }
 }
-
-
 @media screen and (min-device-width: 400px) and (max-device-width: 693px){
 
 .myclass {
