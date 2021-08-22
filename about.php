@@ -17,8 +17,6 @@
   width: auto;
   font-weight:bold;
   text-align: center;
-  
-
 }
 img{
     
