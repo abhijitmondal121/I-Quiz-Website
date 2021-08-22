@@ -58,12 +58,8 @@ img{
 
 }
 .desc{
-
-    
 font-size: 22px;
 font-family: cursive;
-
-
 }
 }
 
