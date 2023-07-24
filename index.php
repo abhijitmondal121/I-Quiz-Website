@@ -99,6 +99,7 @@
 }
 
 
+
 @media screen and (min-device-width: 294px) and (max-device-width: 693px){
   #home{
     height:235px; padding:20px 0px; background-image: url('partials/q5.jpg');background-size: 100%; 

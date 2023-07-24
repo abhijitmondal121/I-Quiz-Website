@@ -20,6 +20,7 @@ if(isset($_SESSION['loggedin'])&& $_SESSION['loggedin']=true){
         </div>
         ';
       }
+      
     else{
         echo'
         <nav class="navbar navbar-expand-lg navbar-light "style="float:right;">

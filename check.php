@@ -14,7 +14,6 @@
   <style>
        #b{
        font-size:40px;
-
      }
      #q{
        font-size:33px;

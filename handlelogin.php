@@ -19,7 +19,6 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
           header("Location:/all_quiz/index.php?loginsuccess=false");
            }
        
-    
 }
 ?>
 <!-- id17095453_quiz

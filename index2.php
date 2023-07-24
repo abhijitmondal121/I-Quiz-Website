@@ -87,8 +87,7 @@ font-size:28px;
             // <a href="question.php?slno='.$slno.'"><button type="button" class="btn btn-outline-primary mx-1 my-1" style="width: 350px; height: 110px;box-shadow: 2px 2PX 2PX 2PX rgb(104, 102, 102);">'.$t_name.'</button></a> 
             // ';
                 
-                
-                
+                 
             echo '  <div class="col-md-4 mt-3 mb-2">
             <div class="card" style="width: 16rem;border-radius: 10%;box-shadow: 2px 2PX 15PX 15PX rgb(104, 102, 102);">
             <img  src="https://source.unsplash.com/500x400/?'. $t_name.',coding" class="card-img-top" alt="..." style=" border-radius: 15%;">

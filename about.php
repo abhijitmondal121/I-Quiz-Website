@@ -18,6 +18,7 @@
   font-weight:bold;
   text-align: center;
 }
+
 img{
     
     border-radius:100%;
